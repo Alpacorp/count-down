@@ -70,44 +70,34 @@
       font-size: 10px;
       margin: 0;
     }
-
-    #time {
-      font-size: 18px;
-      font-weight: bold;
-    }
   </style>
 </head>
 
 <body>
   <!-- HTML -->
-  <div class="countdown">
+  <div class="countdown" style="transition: none 0s ease 0s !important; top: 96px !important;">
     <div class="title">
       <h2>
-        ⭐ ¡Se acaba el tiempo para cumplir sus deseos! ⌚
+        ⭐ ¡Se acaba el tiempo para cumplir sus deseos! ⭐
       </h2>
     </div>
     <div class="count">
       <div class="date">
-        <p id="days" class="number"></p>
+        <p id="days" class="number">11</p>
         <p class="text">Días</p>
       </div>
       <div class="date">
-        <p id="hours" class="number"></p>
+        <p id="hours" class="number">14</p>
         <p class="text">Horas</p>
       </div>
       <div class="date">
-        <p id="minutes" class="number"></p>
+        <p id="minutes" class="number">46</p>
         <p class="text">Minutos</p>
       </div>
       <div class="date">
-        <p id="seconds" class="number"></p>
+        <p id="seconds" class="number">29</p>
         <p class="text">Segundos</p>
       </div>
-    </div>
-    <div>
-      <h2>
-        🎄
-      </h2>
     </div>
   </div>
 </body>
@@ -141,7 +131,7 @@
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("time").innerHTML = "EXPIRED";
+      document.getElementById("days").innerHTML = "Feliz Año";
     }
   }, 1000);
 </script>
